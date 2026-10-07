@@ -11,23 +11,6 @@
 <head>
     <meta charset="UTF-8">
 <meta name="referrer" content="no-referrer">
-<!-- SINTERGIASE THREE.JS: carga directa desde GitHub (r128). Sin jsDelivr. -->
-<script id="sintergia-three-github" src="https://raw.githubusercontent.com/mrdoob/three.js/r128/build/three.min.js" crossorigin="anonymous"></script>
-
-<script>
-(function(){
-  window.SINTERGIA_THREE_URL='https://raw.githubusercontent.com/mrdoob/three.js/r128/build/three.min.js';
-  window.addEventListener('error', function(ev){
-    if(ev.target && ev.target.id==='sintergia-three-github' && !window.THREE){
-      console.error('Three.js no pudo cargarse desde GitHub:', window.SINTERGIA_THREE_URL);
-    }
-  }, true);
-  window.addEventListener('load', function(){
-    if(window.THREE) window.SINTERGIA_THREE_READY=true;
-  }, {once:true});
-})();
-</script>
-
 <!-- V3.49: núcleo 3D mixto de protones/neutrones, distribución volumétrica Fibonacci/ángulo áureo y masa física base con amplificación visual áurea; acceso correcto acelerado. -->
 <!-- V3.51: sin tambaleo final; deformación S/E a 128 Hz internos con 129 puntos por rebote, fluida en 60/120 Hz. -->
 <!-- V3.25 (bloque 2): rebote de S y E con elasticidad (estirar al caer/subir, aplastar al contacto, volumen constante), la S un rebote mas que la E, alturas/deslizamiento/giro aleatorios por letra, ultimo contacto exacto en t=1 (01/10/2026) -->
